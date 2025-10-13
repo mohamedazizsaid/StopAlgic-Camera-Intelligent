@@ -26,7 +26,7 @@ def token_required(f):
             
         try:
             data = jwt.decode(token, app.config['SECRET_KEY'], algorithms=["HS256"])
-            # Vérifier seulement que le token est valide, sans passer current_user
+
             if not db.get_responsable_by_id(ObjectId(data['user_id'])):
                 return jsonify({'message': 'Utilisateur non trouvé!'}), 401
         except jwt.InvalidTokenError:
@@ -120,4 +120,4 @@ def delete_anomalie(anomalie_id):
         return jsonify({'message': f'Erreur lors de la suppression de l\'anomalie: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
+    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=Fals
