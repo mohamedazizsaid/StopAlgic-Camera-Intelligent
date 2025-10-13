@@ -1,0 +1,15 @@
+forme image cassure   (like rotation)
+forme image etiquette
+entrainementcassure
+entrainement etiquette
+evaluation data set cassur
+################## etiquette
+prediction (class main)
+test
+training bouchon
+
+
+bib:ultralitycs - keras -cv2 -numpy - matplot.lib - PIL
+
+consulter stat
+recevoir notif en remps reel deb fin test
