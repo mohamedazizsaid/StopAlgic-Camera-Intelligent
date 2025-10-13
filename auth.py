@@ -120,4 +120,4 @@ def delete_anomalie(anomalie_id):
         return jsonify({'message': f'Erreur lors de la suppression de l\'anomalie: {str(e)}'}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=Fals
+    app.run(debug=True, host='0.0.0.0', port=5000, use_reloader=False)
